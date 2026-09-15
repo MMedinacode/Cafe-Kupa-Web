@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Café Küpa — Café de especialidad en el centro de Rancagua</title>
+<meta name="description" content="Café Küpa, Gamero 440, Rancagua. Café de especialidad, desayunos desde las 7:30 y pastelería propia. 4,8 ★ con 238 reseñas en Google. Carta con precios reales.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#8A7059">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%238A7059'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-family='Georgia,serif' font-size='40' fill='%23F7F4EE'%3EK%3C/text%3E%3C/svg%3E">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CL">
+<meta property="og:site_name" content="Café Küpa">
+<meta property="og:title" content="Café Küpa — café de especialidad en Gamero 440, Rancagua">
+<meta property="og:description" content="Abierto desde las 7:30. Café de especialidad, tostadas, sándwiches y pastelería. 4,8 ★ con 238 reseñas.">
+<meta property="og:url" content="https://mmedinacode.github.io/Cafe-Kupa-Web/">
+<meta property="og:image" content="https://mmedinacode.github.io/Cafe-Kupa-Web/fotos/latte.jpg">
+<meta property="og:image:alt" content="Latte con arte servido en Café Küpa, Rancagua">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=Syne:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="loader" class="loader" aria-hidden="true">
+  <div class="loader-arco"><span>Küpa</span></div>
+</div>
+
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="head">
+  <div class="head-in">
+    <a class="brand" href="#inicio" data-tab="inicio" aria-label="Café Küpa, ir al inicio">
+      <span class="brand-arco" aria-hidden="true">K</span>
+      <span class="brand-txt"><strong>Café Küpa</strong><em>Rancagua</em></span>
+    </a>
+
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav" aria-label="Secciones">
+      <ul class="nav-links">
+        <li><a href="#inicio"    data-tab="inicio" class="on">Inicio</a></li>
+        <li><a href="#nosotros"  data-tab="nosotros">Nosotros</a></li>
+        <li><a href="#carta"     data-tab="carta">Carta</a></li>
+        <li><a href="#resenas"   data-tab="resenas">Reseñas</a></li>
+        <li><a href="#redes"     data-tab="redes">Redes</a></li>
+        <li><a href="#visitanos" data-tab="visitanos">Visítanos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ══════════════ INICIO ══════════════ -->
+<section class="tab-panel on" data-tab-panel="inicio" id="inicio">
+  <div class="hero">
+    <p class="eyebrow">Gamero 440 · Centro de Rancagua</p>
+    <h1>El café abre<br>a las <em>siete y media.</em></h1>
+    <p class="hero-lead">
+      Café de especialidad en pleno centro, con la cocina andando desde
+      temprano: filtrados por origen, tostadas con huevo pochado y
+      pastelería propia.
+    </p>
+
+    <div class="hero-cta">
+      <a class="btn btn-solid" href="#carta" data-tab="carta">Ver la carta y precios</a>
+      <a class="btn btn-ghost" href="#visitanos" data-tab="visitanos">Cómo llegar</a>
+    </div>
+
+    <!-- El arco es el elemento real del local: su logo va pintado en uno -->
+    <figure class="arco">
+      <img src="fotos/latte.jpg" alt="Latte con arte servido en una taza blanca sobre mesa de madera en Café Küpa" fetchpriority="high" decoding="async">
+    </figure>
+
+    <p class="hero-open">
+      <span class="dot" id="statusDot" aria-hidden="true"></span>
+      <span data-horario-estado>Lunes a viernes de 07:30 a 18:30 · sábado de 10:00 a 14:00</span>
+    </p>
+  </div>
+
+  <div class="wrap">
+    <div class="cifras reveal">
+      <div><b>4,8</b><span>★ en Google</span></div>
+      <div><b>238</b><span>reseñas</span></div>
+      <div><b>07:30</b><span>abre entre semana</span></div>
+      <div><b>$2.200</b><span>desde, el espresso</span></div>
+    </div>
+
+    <div class="tri reveal">
+      <article class="tri-card">
+        <h3>Café de especialidad</h3>
+        <p>Filtrados por origen, dirty chai, matcha y un irlandés con baileys.
+           Toda la carta de bebidas está acá con su precio real.</p>
+        <a href="#carta" data-tab="carta" class="lnk">Ver la carta →</a>
+      </article>
+      <article class="tri-card">
+        <h3>Desayuno de verdad</h3>
+        <p>Tostadas de palta con huevo pochado, omelettes y sándwiches.
+           Abierto desde las 7:30, que en el centro no es poca cosa.</p>
+        <a href="#nosotros" data-tab="nosotros" class="lnk">Conocer el local →</a>
+      </article>
+      <article class="tri-card">
+        <h3>Para llevar y delivery</h3>
+        <p>Se puede tomar acá, pedir para llevar o recibirlo en casa.
+           Lo declara su propia ficha de Google.</p>
+        <a href="#visitanos" data-tab="visitanos" class="lnk">Visítanos →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ NOSOTROS ══════════════ -->
+<section class="tab-panel" data-tab-panel="nosotros" id="nosotros">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Nosotros</p>
+      <h2>Del local chico de enfrente<br>al de ahora</h2>
+      <p class="sec-lead">
+        No lo decimos nosotros: lo cuenta un cliente en su reseña de Google.
+      </p>
+    </header>
+
+    <div class="split reveal">
+      <figure class="split-img">
+        <img src="fotos/interior-logo.jpg" alt="Interior de Café Küpa con su logo pintado sobre un arco en la pared" loading="lazy" decoding="async">
+        <figcaption>El arco con el logo, dentro del local</figcaption>
+      </figure>
+      <div class="split-txt">
+        <h3>Un local que creció</h3>
+        <blockquote class="cita">
+          “Los conoci cuando estaban en el local chiquito que estaba al frente
+          de donde estan ahora. (…) El local esta precioso, es grande, bonita
+          decoración.”
+          <cite>Jorge Reveco, en Google</cite>
+        </blockquote>
+        <p>
+          Hoy el salón es amplio, luminoso y minimalista, con el wordmark
+          pintado sobre un arco que se volvió la firma del lugar.
+        </p>
+      </div>
+    </div>
+
+    <div class="split split-rev reveal">
+      <figure class="split-img">
+        <img src="fotos/palta-pochado.jpg" alt="Tostada de palta con huevo pochado y semillas, servida en plato de cerámica" loading="lazy" decoding="async">
+        <figcaption>Tostada de palta con huevo pochado</figcaption>
+      </figure>
+      <div class="split-txt">
+        <h3>Lo que resume Google de sus 238 reseñas</h3>
+        <p>
+          Café de especialidad —el <strong>Espresso Tonic</strong> y el
+          <strong>Chai Latte</strong> aparecen por nombre—, sándwiches y
+          postres, ambiente cálido y agradable, servicio atento y rápido,
+          precios razonables para la calidad y el <strong>horario de apertura
+          temprano</strong>.
+        </p>
+        <a href="#resenas" data-tab="resenas" class="lnk">Leer las reseñas →</a>
+      </div>
+    </div>
+
+    <div class="gal reveal">
+      <figure><img src="fotos/avocado-toast.jpg" alt="Tostada de palta con huevo pochado, tomates y betarraga" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/omelette.jpg" alt="Omelette servido con palta y semillas" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/sandwich.jpg" alt="Sándwich en pan ciabatta con ensalada" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/tortas.jpg" alt="Cheesecakes y tortas en la vitrina" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/salon-bn.jpg" alt="Salón del café visto desde la vereda" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/chocolate-trufas.jpg" alt="Chocolate caliente con trufas" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/cafe-helado-brownie.jpg" alt="Café helado con un brownie" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/fachada.jpg" alt="Fachada negra de Café Küpa en Gamero 440" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/huevo-pochado.jpg" alt="Huevo pochado sobre palta con semillas" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/latte-postre.jpg" alt="Latte junto a un postre en plato de cerámica" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/capuchino-torta.jpg" alt="Capuchino con arte y un trozo de torta" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/batido-tostada.jpg" alt="Batido y tostada con huevo pochado" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/te-helado.jpg" alt="Té helado con rodaja de naranja" loading="lazy" decoding="async"></figure>
+    </div>
+    <!--
+      `equipo.jpg` queda bajado pero SIN usar a propósito: sale el equipo
+      con la cara visible. Es una foto publicada por el propio local, así
+      que probablemente se puede, pero hay que preguntarle a Matías antes.
+    -->
+    <p class="note">Todas las fotos son del propio local, de su ficha de Google Maps.</p>
+  </div>
+</section>
+
+<!-- ══════════════ CARTA ══════════════ -->
+<section class="tab-panel" data-tab-panel="carta" id="carta">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Carta</p>
+      <h2>Precios reales, de su carta</h2>
+      <p class="sec-lead">
+        Los 20 valores de abajo están transcritos de la foto de su carta
+        impresa, publicada por el propio local en su ficha de Google.
+      </p>
+    </header>
+
+    <h3 class="cat reveal">Preparaciones con café</h3>
+    <div class="menu reveal">
+      <article class="menu-item"><div><h4>Espresso</h4><p>30 a 40 ml</p></div><span class="price">$2.200</span></article>
+      <article class="menu-item"><div><h4>Lungo</h4><p>Espresso doble + 60 ml de agua</p></div><span class="price">$2.500</span></article>
+      <article class="menu-item"><div><h4>Americano</h4><p>Espresso doble + 200 ml de agua</p></div><span class="price">$2.700</span></article>
+      <article class="menu-item"><div><h4>Macchiato</h4><p>Espresso doble + 30 ml de leche</p></div><span class="price">$2.700</span></article>
+      <article class="menu-item">
+        <img src="fotos/cappuccino.jpg" alt="Cappuccino con canela" loading="lazy" decoding="async">
+        <div><h4>Cappuccino mediano</h4><p>Espresso simple + 200 ml de leche</p></div><span class="price">$2.700</span></article>
+      <article class="menu-item">
+        <img src="fotos/cappuccino-torta.jpg" alt="Cappuccino grande junto a un trozo de torta" loading="lazy" decoding="async">
+        <div><h4>Cappuccino grande</h4><p>Espresso doble + 300 ml de leche</p></div><span class="price">$3.500</span></article>
+      <article class="menu-item"><div><h4>Flat white o Cortado</h4><p>Espresso doble + 120 ml de leche</p></div><span class="price">$2.990</span></article>
+      <article class="menu-item">
+        <img src="fotos/latte-arte.jpg" alt="Latte con arte en taza negra" loading="lazy" decoding="async">
+        <div><h4>Latte</h4><p>Espresso simple + 300 ml de leche</p></div><span class="price">$3.100</span></article>
+      <article class="menu-item"><div><h4>Latte sabor</h4><p>Espresso simple + syrup de sabor + 270 ml de leche</p></div><span class="price">$3.800</span></article>
+      <article class="menu-item"><div><h4>Mocaccino</h4><p>Espresso doble + chocolate + leche</p></div><span class="price">$3.990</span></article>
+      <article class="menu-item">
+        <img src="fotos/chai-latte.jpg" alt="Chai latte con anís estrellado encima de la espuma" loading="lazy" decoding="async">
+        <div><h4>Dirty chai latte</h4><p>Concentrado de té chai + leche + shot de espresso</p></div><span class="price">$3.900</span></article>
+      <article class="menu-item"><div><h4>Irlandés</h4><p>Espresso doble + shot de baileys + leche</p></div><span class="price">$4.200</span></article>
+    </div>
+
+    <h3 class="cat reveal">Filtrados</h3>
+    <div class="menu reveal">
+      <article class="menu-item">
+        <div><h4>Filtrados por origen</h4><p>Consultar por orígenes disponibles. El valor varía según origen, proceso y variedad.</p></div>
+        <span class="price">$4.500 – $5.990</span>
+      </article>
+    </div>
+
+    <h3 class="cat reveal">Preparaciones sin café</h3>
+    <div class="menu reveal">
+      <article class="menu-item"><div><h4>Chai latte</h4><p>Concentrado de té chai + leche</p></div><span class="price">$3.200</span></article>
+      <article class="menu-item">
+        <img src="fotos/chocolate-trufas.jpg" alt="Chocolate caliente con trufas de chocolate" loading="lazy" decoding="async">
+        <div><h4>Chocolate caliente</h4><p>Chocolate caliente + leche</p></div><span class="price">$3.990</span></article>
+      <article class="menu-item"><div><h4>Madrileño</h4><p>Chocolate caliente espeso</p></div><span class="price">$3.990</span></article>
+      <article class="menu-item"><div><h4>Matcha latte</h4><p>Concentrado de té matcha + leche</p></div><span class="price">$3.990</span></article>
+      <article class="menu-item"><div><h4>Tetera de té 100% artesanal</h4><p>Ceylán tradicional · Chai · Magia azul · Menta manzanilla · Relax</p></div><span class="price">$2.990</span></article>
+      <article class="menu-item"><div><h4>Tetera de té con leche</h4><p>Ceylán tradicional · Chai</p></div><span class="price">$3.990</span></article>
+      <article class="menu-item"><div><h4>Agregados</h4><p>Syrup de sabor / Espresso / Cambio a bebida vegetal / Hielo</p></div><span class="price">$700</span></article>
+    </div>
+
+    <h3 class="cat reveal">Para comer</h3>
+    <div class="aviso reveal">
+      <strong>La carta que publicaron es sólo de bebidas.</strong> Estos
+      platos son reales —se ven en sus propias fotos y los nombran sus
+      reseñas— pero <b>sus precios no constan en ninguna parte</b>, así que
+      acá van sin valor en vez de con uno inventado.
+    </div>
+    <div class="menu reveal">
+      <article class="menu-item">
+        <img src="fotos/palta-pochado.jpg" alt="Tostada de palta con huevo pochado" loading="lazy" decoding="async">
+        <div><h4>Tostada de palta con huevo pochado</h4><p>Con semillas y encurtido de betarraga.</p></div><span class="price">Consultar</span></article>
+      <article class="menu-item">
+        <img src="fotos/omelette.jpg" alt="Omelette con palta" loading="lazy" decoding="async">
+        <div><h4>Omelette</h4><p>Servido con palta y semillas.</p></div><span class="price">Consultar</span></article>
+      <article class="menu-item">
+        <img src="fotos/sandwich.jpg" alt="Sándwich en pan ciabatta" loading="lazy" decoding="async">
+        <div><h4>Sándwiches</h4><p>Nombrados por sus clientes en las reseñas.</p></div><span class="price">Consultar</span></article>
+      <article class="menu-item">
+        <img src="fotos/tortas.jpg" alt="Cheesecakes y tortas en vitrina" loading="lazy" decoding="async">
+        <div><h4>Pastelería</h4><p>Cheesecakes y tortas en vitrina.</p></div><span class="price">Consultar</span></article>
+      <article class="menu-item">
+        <img src="fotos/cafe-helado-brownie.jpg" alt="Brownie de chocolate" loading="lazy" decoding="async">
+        <div><h4>Brownie</h4><p>Visto en sus fotos, acompañando el café helado.</p></div><span class="price">Consultar</span></article>
+      <article class="menu-item"><div><h4>Alfajores</h4><p>Nombrados en la reseña de Jorge Reveco.</p></div><span class="price">Consultar</span></article>
+    </div>
+
+    <p class="note">
+      Precios transcritos de <em>fotos/carta.jpg</em>, foto de su carta
+      impresa subida por el local. Conviene confirmarlos al pedir.
+    </p>
+    <!--
+      ⚠️ PLACEHOLDER MARCADO — FALTAN LOS PRECIOS DE LA COMIDA.
+      La carta fotografiada sólo cubre bebidas. Los 6 productos de "Para
+      comer" son reales (se ven en sus fotos y los nombran las reseñas) pero
+      NO tienen precio publicado en ninguna parte. Van como "Consultar".
+      Cuando el local entregue su carta de comida, reemplazar.
+    -->
+  </div>
+</section>
+
+<!-- ══════════════ RESEÑAS ══════════════ -->
+<section class="tab-panel" data-tab-panel="resenas" id="resenas">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Reseñas</p>
+      <h2>4,8 ★ · 238 reseñas</h2>
+      <p class="sec-lead">Reales, copiadas tal cual de su ficha de Google Maps.</p>
+    </header>
+
+    <div class="revs reveal">
+      <blockquote class="rev">
+        <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+        <p>Un lugar muy agradable y cálido desde el primer momento. El ambiente es perfecto para conversar y relajarse, y destaca la preocupación de todo el equipo por brindar una atención realmente 10/10.</p>
+        <footer><b>OCIN NIKO</b><span>Local Guide · 47 reseñas · hace 5 meses</span></footer>
+      </blockquote>
+
+      <blockquote class="rev">
+        <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+        <p>Con mi pareja buscábamos un lugar donde tomar desayuno por el centro de Rancagua un día sábado y, por fortuna, nos topamos con este café. La comida es deliciosa, la atención es muy buena y el ambiente es espectacular: muy minimalista. Realmente disfruté la experiencia. Lo recomiendo completamente 👍</p>
+        <footer><b>Jorge Sandoval</b><span>2 reseñas · hace 6 meses</span></footer>
+      </blockquote>
+
+      <blockquote class="rev">
+        <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+        <p>Los conoci cuando estaban en el local chiquito que estaba al frente de donde estan ahora. Super bueno el cafecito pedí unos alfajores que estaban tambien muy buenos. El local esta precioso, es grande, bonita decoración.</p>
+        <footer><b>Jorge Reveco</b><span>Local Guide · 50 reseñas · hace 5 meses</span></footer>
+      </blockquote>
+    </div>
+
+    <div class="rev-cta reveal">
+      <a class="btn btn-solid" href="https://search.google.com/local/reviews?placeid=ChIJRfTidWZDY5YRV58TuX7z8Pc" target="_blank" rel="noopener">Leer las 238 reseñas</a>
+      <a class="btn btn-ghost" href="https://search.google.com/local/writereview?placeid=ChIJRfTidWZDY5YRV58TuX7z8Pc" target="_blank" rel="noopener">Dejar una reseña</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ REDES ══════════════ -->
+<section class="tab-panel" data-tab-panel="redes" id="redes">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Redes</p>
+      <h2>Dónde encontrarlos</h2>
+      <p class="sec-lead">Sólo lo verificado. Ningún perfil inventado.</p>
+    </header>
+
+    <div class="redes reveal">
+      <a class="red red-map" href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20K%C3%BCpa&query_place_id=ChIJRfTidWZDY5YRV58TuX7z8Pc" target="_blank" rel="noopener">
+        <span class="red-ico" aria-hidden="true">◎</span>
+        <span class="red-txt"><b>Ficha en Google Maps</b><em>4,8 ★ · 238 reseñas</em></span>
+      </a>
+    </div>
+
+    <!--
+      ⚠️ PLACEHOLDER MARCADO — PENDIENTES DE VERIFICAR (15-09-2026):
+      · Instagram / TikTok: NO buscados todavía. No inventar handle.
+      · Teléfono: Google NO publica ninguno para este local. Probar 2GIS
+        (2gis.cl) y su Instagram. Si no aparece, el sitio va sin teléfono.
+        NUNCA poner el de otro local (ya pasó antes en el portafolio).
+      · "Pedir en línea": la ficha de Maps tiene ese botón, falta ver a qué
+        plataforma apunta. Si es un link real, va en Visítanos.
+      Cuando haya cuentas verificadas, declarar window.REDES y redes.js las
+      pinta solo.
+    -->
+    <div class="aviso reveal">
+      <strong>Nota para el local:</strong> Google no tiene publicado ningún
+      teléfono de contacto de Café Küpa, y no pudimos confirmar cuentas de
+      redes sociales a su nombre. Con 238 reseñas y 4,8 ★, es lo primero que
+      convendría completar: hoy quien quiera preguntar algo antes de ir no
+      tiene por dónde.
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ VISÍTANOS ══════════════ -->
+<section class="tab-panel" data-tab-panel="visitanos" id="visitanos">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Visítanos</p>
+      <h2>Gamero 440, Rancagua</h2>
+    </header>
+
+    <div class="visit reveal">
+      <div class="visit-info">
+        <div class="vblock">
+          <h3>Dirección</h3>
+          <p>Gamero 440<br>Rancagua, Región de O'Higgins</p>
+          <p class="sub">Plus Code R7G5+X7</p>
+        </div>
+
+        <div class="vblock">
+          <h3>Horario</h3>
+          <p class="estado"><span class="dot" aria-hidden="true"></span><span data-horario-estado>Lunes a viernes de 07:30 a 18:30</span></p>
+          <ul class="horario horario-semana" id="horario-lista" data-horario-semana>
+            <li data-dia="1"><span>Lunes</span><b>07:30 – 18:30</b></li>
+            <li data-dia="2"><span>Martes</span><b>07:30 – 18:30</b></li>
+            <li data-dia="3"><span>Miércoles</span><b>07:30 – 18:30</b></li>
+            <li data-dia="4"><span>Jueves</span><b>07:30 – 18:30</b></li>
+            <li data-dia="5"><span>Viernes</span><b>07:30 – 18:30</b></li>
+            <li data-dia="6"><span>Sábado</span><b>10:00 – 14:00</b></li>
+            <li data-dia="0"><span>Domingo</span><b class="cerrado">Cerrado</b></li>
+          </ul>
+          <p class="sub">Horario de su ficha de Google Maps, 15-09-2026.</p>
+        </div>
+
+        <div class="vblock">
+          <h3>Contacto</h3>
+          <p class="sub">
+            Google no publica un teléfono para este local. Lo más directo hoy
+            es pasar por Gamero 440 o escribir por su ficha de Maps.
+          </p>
+        </div>
+
+        <div class="vblock">
+          <h3>Cómo se puede pedir</h3>
+          <p>Consumo en el lugar · Para llevar · Entrega a domicilio</p>
+          <p class="sub">Servicios declarados en su ficha de Google.</p>
+        </div>
+
+        <div class="vblock">
+          <h3>Gasto por persona</h3>
+          <p>$5.000 – $10.000</p>
+          <p class="sub">Estimación de Google, informada por 79 clientes.</p>
+        </div>
+
+        <div class="vblock vblock-cta">
+          <a class="btn btn-solid" href="https://www.google.com/maps/dir/?api=1&destination=Caf%C3%A9%20K%C3%BCpa%20Gamero%20440%20Rancagua&destination_place_id=ChIJRfTidWZDY5YRV58TuX7z8Pc" target="_blank" rel="noopener">Cómo llegar</a>
+          <a class="btn btn-ghost" href="https://waze.com/ul?ll=-34.1726,-70.74178&navigate=yes" target="_blank" rel="noopener">Ir con Waze</a>
+        </div>
+      </div>
+
+      <div class="visit-map">
+        <!-- ⚠️ SIN loading="lazy": vive en una pestaña display:none y si no,
+             el mapa nunca carga. Embed con el CID real de la ficha. -->
+        <iframe
+          title="Mapa de Café Küpa en Gamero 440, Rancagua"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3300!2d-70.74178!3d-34.1726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9663436675e2f445%3A0xf7f0f37eb9139f57!2zQ2Fmw6kgS8O8cGE!5e0!3m2!1ses!2scl!4v1757900000000!5m2!1ses!2scl"
+          width="100%" height="100%" style="border:0" allowfullscreen=""
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div class="float">
+  <a class="fab fab-map" href="https://www.google.com/maps/dir/?api=1&destination=Caf%C3%A9%20K%C3%BCpa%20Gamero%20440%20Rancagua&destination_place_id=ChIJRfTidWZDY5YRV58TuX7z8Pc" target="_blank" rel="noopener" aria-label="Cómo llegar a Café Küpa"><span aria-hidden="true">➤</span></a>
+  <button class="fab fab-top" id="toTop" aria-label="Volver arriba"><span aria-hidden="true">↑</span></button>
+</div>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div>
+      <p class="foot-brand">Café Küpa</p>
+      <p>Gamero 440, Rancagua · O'Higgins</p>
+      <p data-horario-resumen>Lun a Vie 07:30 – 18:30 · Sáb 10:00 – 14:00 · Dom cerrado</p>
+    </div>
+    <div class="foot-demo">
+      <p><strong>Esta es una demo.</strong> No es el sitio oficial de Café Küpa.</p>
+      <p>Hecha con datos públicos reales de su ficha de Google Maps
+         (verificados el 15-09-2026) para mostrarle al local cómo se vería
+         su página web.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.HORARIO = {
+  dias: ["07:30 - 18:30","07:30 - 18:30","07:30 - 18:30","07:30 - 18:30",
+         "07:30 - 18:30","10:00 - 14:00","Cerrado"],
+  fuente: "Google Maps, 15-09-2026"
+};
+/* window.REDES no se declara: no hay ninguna cuenta verificada todavía. */
+</script>
+
+<script src="script.js"></script>
+<script src="vida.js"></script>
+<script src="carta-fotos.js"></script>
+<script src="carrito.js"></script>
+<script src="horario.js"></script>
+<script src="redes.js"></script>
+</body>
+</html>
