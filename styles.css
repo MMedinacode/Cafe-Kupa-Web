@@ -431,7 +431,14 @@ h1,h2,h3,h4{
 .fab[data-label]:hover::after{opacity:1;transform:translateY(-50%) translateX(0)}
 
 /* ─── 3. Redes: tarjeta con logo real y rejilla de 3 fotos ─────── */
-.redes{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px;padding-top:24px}
+.redes{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:18px;padding-top:24px;
+  /* align-items:start para que cada tarjeta mida lo que mide su contenido.
+     Sin esto, la que no lleva rejilla de fotos (la del teléfono) se estira
+     igual que las otras y queda con medio recuadro vacío. */
+  align-items:start;
+}
 .red-card{
   background:var(--c-bloque);border:1px solid var(--c-linea);
   border-radius:var(--c-radio);overflow:hidden;box-shadow:var(--c-sombra);
@@ -558,3 +565,12 @@ h1,h2,h3,h4{
   .red-card-cta{display:none}
   .redes{grid-template-columns:1fr}
 }
+
+/* ── Parche 15-09-2026: el "+" del carrito en filas de carta ──────────
+   carrito.js distingue dos layouts: tarjeta con foto (el "+" va absoluto
+   en la esquina) y fila simple (lo añade al final de la fila). Pero
+   nuestras .menu-item son grid de 3 columnas, así que en las filas sin
+   foto el "+" caía a una SEGUNDA FILA del grid, torcido y abajo a la
+   izquierda. Se ancla a la esquina igual que en las tarjetas. */
+.menu-item{position:relative}
+.menu-item > .uc-add{position:absolute;top:8px;right:10px;margin:0}
