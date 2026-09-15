@@ -177,7 +177,35 @@ Se bajaron 25 y **se borraron 3**:
 
 ## Lo que falta por verificar
 
-- [ ] **Instagram / TikTok** — no buscado todavía.
+- [x] **Instagram — VERIFICADO 15-09-2026**: `@cafekupa_rancagua`,
+      **18 mil seguidores, 72 publicaciones**. Su bio declara "Gamero 440
+      local 1", que es esta dirección, así que el perfil es de ellos.
+      Falta todavía descartar TikTok.
+
+## 🏪 TIENEN TRES LOCALES — ojo con la cola de trabajo
+
+Su bio de Instagram los lista:
+
+- **Gamero 440 local 1** (Centro) ← el de esta página
+- **Bombero Villalobos 01231 local 2** (pasado Javiera Carrera)
+- **Mujica 301 local 1**
+
+Esto **confirma la sospecha anotada en la cola**: el nº 12 de la lista de
+Rancagua, "Café Küpa Bombero Villalobos" (4,6★ · 25 reseñas), **no es otro
+negocio, es su segunda sucursal**. Y hay una tercera que ni siquiera está
+en la planilla.
+
+→ **NO hacer un sitio aparte para Bombero Villalobos.** Va un solo sitio con
+selector de sucursal, como 6eis Siete Ocho (2) y R3 Coffee (3). Hay que
+sacar el Place ID, el horario y el embed de las otras dos fichas y sumarlas
+a este proyecto.
+
+→ Es además **un gancho de venta fuerte**: sus tres locales figuran en
+Google como fichas sueltas, así que las reseñas les quedan repartidas
+(238 + 25 + las que tenga Mujica) en vez de sumar como una marca.
+
+Su bio también dice **"Coffee Lab"**, que no aparece en ninguna otra parte
+y vale para el texto de Nosotros.
 - [ ] **A qué plataforma lleva el botón "Pedir en línea"** de Maps
       (¿Rappi? ¿PedidosYa? ¿carta propia?). Si es un link real, va al sitio.
 - [ ] **Teléfono / WhatsApp** — Google no publica ninguno. Probar en

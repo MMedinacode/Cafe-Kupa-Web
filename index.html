@@ -90,7 +90,7 @@
     <div class="cifras reveal">
       <div><b>4,8</b><span>★ en Google</span></div>
       <div><b>238</b><span>reseñas</span></div>
-      <div><b>07:30</b><span>abre entre semana</span></div>
+      <div><b>18 mil</b><span>en Instagram</span></div>
       <div><b>$2.200</b><span>desde, el espresso</span></div>
     </div>
 
@@ -333,6 +333,10 @@
     </header>
 
     <div class="redes reveal">
+      <a class="red red-ig" href="https://www.instagram.com/cafekupa_rancagua/" target="_blank" rel="noopener">
+        <span class="red-ico" aria-hidden="true">◈</span>
+        <span class="red-txt"><b>@cafekupa_rancagua</b><em>18 mil seguidores · 72 publicaciones</em></span>
+      </a>
       <a class="red red-map" href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20K%C3%BCpa&query_place_id=ChIJRfTidWZDY5YRV58TuX7z8Pc" target="_blank" rel="noopener">
         <span class="red-ico" aria-hidden="true">◎</span>
         <span class="red-txt"><b>Ficha en Google Maps</b><em>4,8 ★ · 238 reseñas</em></span>
@@ -340,22 +344,25 @@
     </div>
 
     <!--
-      ⚠️ PLACEHOLDER MARCADO — PENDIENTES DE VERIFICAR (15-09-2026):
-      · Instagram / TikTok: NO buscados todavía. No inventar handle.
-      · Teléfono: Google NO publica ninguno para este local. Probar 2GIS
-        (2gis.cl) y su Instagram. Si no aparece, el sitio va sin teléfono.
-        NUNCA poner el de otro local (ya pasó antes en el portafolio).
-      · "Pedir en línea": la ficha de Maps tiene ese botón, falta ver a qué
-        plataforma apunta. Si es un link real, va en Visítanos.
-      Cuando haya cuentas verificadas, declarar window.REDES y redes.js las
-      pinta solo.
+      Instagram VERIFICADO el 15-09-2026: @cafekupa_rancagua, 18 mil
+      seguidores, 72 publicaciones. Su bio declara "Gamero 440 local 1",
+      que es esta dirección, así que el perfil es de ellos.
+      SIGUE PENDIENTE: teléfono (Google no publica ninguno; probar 2GIS),
+      TikTok, y a qué plataforma apunta el botón "Pedir en línea" de Maps.
     -->
     <div class="aviso reveal">
+      <strong>Tienen tres locales, no uno.</strong> Su bio de Instagram
+      declara <b>Gamero 440 local 1</b> (el del centro, que es el de esta
+      página), <b>Bombero Villalobos 01231 local 2</b> y
+      <b>Mujica 301 local 1</b>. En Google Maps cada uno figura como una
+      ficha aparte, así que quien busca "Café Küpa" ve locales sueltos en
+      vez de una cadena — y las reseñas les quedan repartidas.
+    </div>
+    <div class="aviso reveal">
       <strong>Nota para el local:</strong> Google no tiene publicado ningún
-      teléfono de contacto de Café Küpa, y no pudimos confirmar cuentas de
-      redes sociales a su nombre. Con 238 reseñas y 4,8 ★, es lo primero que
-      convendría completar: hoy quien quiera preguntar algo antes de ir no
-      tiene por dónde.
+      teléfono de contacto de Café Küpa. Con 238 reseñas, 4,8 ★ y 18 mil
+      seguidores, es lo primero que convendría completar: hoy quien quiera
+      preguntar algo antes de ir no tiene por dónde.
     </div>
   </div>
 </section>
@@ -459,7 +466,17 @@ window.HORARIO = {
          "07:30 - 18:30","10:00 - 14:00","Cerrado"],
   fuente: "Google Maps, 15-09-2026"
 };
-/* window.REDES no se declara: no hay ninguna cuenta verificada todavía. */
+/* Instagram VERIFICADO el 15-09-2026: @cafekupa_rancagua, 18 mil seguidores.
+   Su bio declara Gamero 440 local 1, que es exactamente esta dirección, así
+   que el perfil es de ellos. Las fotos de la rejilla son reales del propio
+   local (de su ficha de Maps), nunca de stock. */
+window.REDES = {
+  instagram: {
+    user: "cafekupa_rancagua",
+    seguidores: "18.000",
+    fotos: ["fotos/interior-logo.jpg","fotos/palta-pochado.jpg","fotos/latte.jpg"]
+  }
+};
 </script>
 
 <script src="script.js"></script>

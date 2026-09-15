@@ -246,6 +246,8 @@ h1,h2,h3,h4{
 .red:hover{transform:translateY(-3px);box-shadow:var(--sombra-alta)}
 .red-ico{width:46px;height:46px;flex:none;border-radius:23px 23px 8px 8px;
   display:grid;place-content:center;font-size:21px;color:var(--tiza);background:var(--kupa)}
+/* El degradado real de Instagram, no un color inventado. */
+.red-ig .red-ico{background:linear-gradient(45deg,#F9CE34,#EE2A7B 50%,#6228D7)}
 .red-txt{display:flex;flex-direction:column;line-height:1.3}
 .red-txt b{font-family:"Instrument Serif",serif;font-weight:400;font-size:19px}
 .red-txt em{font-style:normal;font-size:13.5px;color:var(--gris)}
