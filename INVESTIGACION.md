@@ -2,7 +2,7 @@
 
 > Verificado **en vivo en Google Maps el 15-09-2026**. Nada de esto viene de
 > la planilla ni de memoria. **Nada acá está inventado.**
-> Estado: **investigado y con carta completa. Falta construir el sitio.**
+> Estado: **CONSTRUIDO, probado y commiteado.** Falta publicar en Pages.
 
 ## Ficha Google Maps
 
@@ -136,16 +136,20 @@ rápido, precios razonables y apertura temprano.
 Lo que se ve en sus fotos:
 
 - **Logo real**: wordmark manuscrito "Café Küpa" en blanco sobre un **arco
-  pintado en un verde salvia / greige apagado** (`fotos/interior-logo.jpg`).
-  Ese arco es la firma visual del local.
+  pintado** (`fotos/interior-logo.jpg`). Ese arco es la firma visual del
+  local. Muestreado con Pillow, el color real da un **greige cálido
+  `#8A7059`** — a simple vista parece salvia, pero la foto está tomada con
+  luz cálida y el promedio es marrón-topo.
 - Fachada negra con el mismo wordmark (`fotos/fachada.jpg`).
 - Mesas de madera clara, sillas negras, mucha luz natural, estética limpia.
 - Latte art cuidado en casi todas las fotos de café.
 
-→ Dirección de diseño sugerida: **verde salvia del arco + madera clara +
-blanco roto**, con el arco como elemento gráfico repetido (hero, tarjetas).
-Muy distinta de Río Deva (azul pizarra + latón). **Verificar contra la
-bitácora que ningún otro proyecto use salvia como dominante.**
+→ **Identidad final (ya aplicada):** greige `#8A7059` muestreado del arco +
+oliva `#7D8B5F` de acento sobre tiza `#F7F4EE`, con **el arco como motivo
+gráfico repetido**: la foto del hero va recortada en arco, y el logo de la
+cabecera, el loader y los íconos de Redes repiten la misma forma.
+Tipografía **Instrument Serif + Manrope + Syne**. Nada que ver con Río Deva
+(azul pizarra + latón) ni con Beyka (rosa).
 
 ## Fotos reales → `fotos/` (22 usables)
 
