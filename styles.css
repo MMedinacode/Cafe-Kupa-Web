@@ -599,21 +599,48 @@ h1,h2,h3,h4{
    el local y ves el suyo. Es justo lo que tres menús sueltos no pueden
    hacer — hoy el cliente tiene que saber de antemano cuál es su link. */
 .local-sel{
-  display:flex; flex-wrap:wrap; gap:8px; margin:0 0 18px;
-  position:sticky; top:0; z-index:5; padding:10px 0;
-  background:linear-gradient(var(--fondo,#fff) 70%, transparent);
+  display:flex; flex-wrap:wrap; gap:9px; margin:0 0 20px;
+  /* 70px = alto de la cabecera, que tambien es sticky: sin esto la barra
+     de locales se metia DEBAJO del menu de navegacion al bajar. */
+  position:sticky; top:70px; z-index:5; padding:12px 0 16px;
+  background:linear-gradient(var(--tiza) 76%, rgba(247,244,238,0));
 }
 .local-btn{
-  border:1.5px solid currentColor; background:transparent; color:inherit;
+  border:1.5px solid var(--linea); background:var(--papel); color:var(--gris);
   border-radius:999px; padding:9px 18px; cursor:pointer;
-  font-family:inherit; font-size:.92rem; font-weight:600; opacity:.55;
-  transition:opacity .18s, background .18s, color .18s;
+  font-family:inherit; font-size:.92rem; font-weight:600;
+  display:inline-flex; align-items:center; gap:8px; min-height:42px;
+  transition:background .22s var(--fx), color .22s var(--fx),
+             border-color .22s var(--fx), transform .22s var(--fx),
+             box-shadow .22s var(--fx);
 }
-.local-btn:hover{opacity:.85}
-.local-btn.on{opacity:1; background:currentColor}
-.local-btn.on::after{content:""}
-.local-btn.on{color:inherit}
-.local-btn:focus-visible{outline:2px solid currentColor; outline-offset:3px}
+.local-btn:hover{border-color:var(--kupa-cl); color:var(--tinta); transform:translateY(-1px)}
+/* El activo va en el greige de marca con letra blanca. Antes era
+   background:currentColor sobre color:inherit — o sea, fondo y letra del
+   mismo color: un borron negro ilegible. */
+.local-btn.on{
+  background:var(--kupa); border-color:var(--kupa); color:#fff;
+  box-shadow:0 8px 18px -10px rgba(90,70,54,.85);
+}
+.local-btn.on:hover{background:var(--kupa-osc); border-color:var(--kupa-osc); color:#fff}
+.local-btn .lb-n{
+  font-family:"Syne",sans-serif; font-size:11px; font-weight:700;
+  letter-spacing:.06em; padding:2px 7px; border-radius:999px;
+  background:var(--arena); color:var(--gris); line-height:1.5;
+  transition:background .22s var(--fx), color .22s var(--fx);
+}
+.local-btn.on .lb-n{background:rgba(255,255,255,.22); color:#fff}
+.local-btn:focus-visible{outline:2px solid var(--kupa); outline-offset:3px}
+@media (max-width:640px){
+  .local-sel{top:0; gap:7px; padding:10px 0 13px}
+  .local-btn{padding:8px 13px; font-size:.86rem}
+}
+
+/* Al cambiar de local, la carta nueva entra con un desvanecido corto: sin
+   esto el cambio era un salto seco y no se notaba que algo habia pasado. */
+@keyframes localEntra{from{opacity:0; transform:translateY(8px)} to{opacity:1; transform:none}}
+.local-carta:not([hidden]){animation:localEntra .34s var(--fx) both}
+@media (prefers-reduced-motion:reduce){ .local-carta:not([hidden]){animation:none} }
 
 .local-cab{margin:0 0 4px; font-size:.95rem}
 .local-cab span{opacity:.6}
