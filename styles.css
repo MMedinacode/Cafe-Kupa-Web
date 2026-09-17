@@ -619,6 +619,8 @@ h1,h2,h3,h4{
 .local-cab span{opacity:.6}
 .local-nota{margin:0 0 22px; font-size:.88rem; opacity:.7; max-width:62ch; line-height:1.5}
 
-/* El logo real en la marca del encabezado */
-.brand-arco img{height:26px; width:auto; display:block}
-@media (max-width:640px){ .brand-arco img{height:22px} }
+/* ⚠️ El logo NO va dentro del arco: el arco es el elemento real del local
+   —tienen el logo pintado sobre uno— y es horizontal, así que ahí se veía
+   apretado. Va en lugar del nombre escrito a mano, que es su sitio. */
+.brand-logo{height:19px; width:auto; display:block; margin-bottom:2px}
+@media (max-width:640px){ .brand-logo{height:16px} }
