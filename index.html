@@ -8,7 +8,7 @@
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#8A7059">
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%238A7059'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-family='Georgia,serif' font-size='40' fill='%23F7F4EE'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="fotos/logo.png">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_CL">
@@ -36,7 +36,7 @@
 <header class="head">
   <div class="head-in">
     <a class="brand" href="#inicio" data-tab="inicio" aria-label="Café Küpa, ir al inicio">
-      <span class="brand-arco" aria-hidden="true">K</span>
+      <span class="brand-arco" aria-hidden="true"><img src="fotos/logo.png" alt=""></span>
       <span class="brand-txt"><strong>Café Küpa</strong><em>Rancagua</em></span>
     </a>
 
@@ -195,116 +195,409 @@
   <div class="wrap">
     <header class="sec-head reveal">
       <p class="eyebrow">Carta</p>
-      <h2>Precios reales, de su carta</h2>
+      <h2>Tres locales,<br>tres cartas</h2>
       <p class="sec-lead">
-        Los 20 valores de abajo están transcritos de la foto de su carta
-        impresa, publicada por el propio local en su ficha de Google.
+        Cada local tiene su propia carta. Elige cuál y verás la suya, con
+        sus <b>246 precios reales</b>.
       </p>
     </header>
 
-        <section class="carta-bloque reveal">
-      <header class="carta-bloque-head">
-        <h3>Preparaciones con café</h3>
-        <span class="carta-bloque-n">12 opciones</span>
-      </header>
+    <div class="local-sel" role="tablist" aria-label="Elige el local">
+      <button class="local-btn on" data-ir="cafekupa" role="tab">Café Küpa</button>
+      <button class="local-btn" data-ir="kupa" role="tab">Küpa</button>
+      <button class="local-btn" data-ir="mujica" role="tab">Küpa Mujica</button>
+    </div>
 
-    <div class="menu reveal stagger">
-      <article class="menu-item"><div><h4>Espresso</h4><p>30 a 40 ml</p></div><span class="price">$2.200</span></article>
-      <article class="menu-item"><div><h4>Lungo</h4><p>Espresso doble + 60 ml de agua</p></div><span class="price">$2.500</span></article>
-      <article class="menu-item"><div><h4>Americano</h4><p>Espresso doble + 200 ml de agua</p></div><span class="price">$2.700</span></article>
-      <article class="menu-item"><div><h4>Macchiato</h4><p>Espresso doble + 30 ml de leche</p></div><span class="price">$2.700</span></article>
-      <article class="menu-item">
-        <img src="fotos/cappuccino.jpg" alt="Cappuccino con canela" loading="lazy" decoding="async">
-        <div><h4>Cappuccino mediano</h4><p>Espresso simple + 200 ml de leche</p></div><span class="price">$2.700</span></article>
-      <article class="menu-item">
-        <img src="fotos/cappuccino-torta.jpg" alt="Cappuccino grande junto a un trozo de torta" loading="lazy" decoding="async">
-        <div><h4>Cappuccino grande</h4><p>Espresso doble + 300 ml de leche</p></div><span class="price">$3.500</span></article>
-      <article class="menu-item"><div><h4>Flat white o Cortado</h4><p>Espresso doble + 120 ml de leche</p></div><span class="price">$2.990</span></article>
-      <article class="menu-item">
-        <img src="fotos/latte-arte.jpg" alt="Latte con arte en taza negra" loading="lazy" decoding="async">
-        <div><h4>Latte</h4><p>Espresso simple + 300 ml de leche</p></div><span class="price">$3.100</span></article>
-      <article class="menu-item"><div><h4>Latte sabor</h4><p>Espresso simple + syrup de sabor + 270 ml de leche</p></div><span class="price">$3.800</span></article>
-      <article class="menu-item"><div><h4>Mocaccino</h4><p>Espresso doble + chocolate + leche</p></div><span class="price">$3.990</span></article>
-      <article class="menu-item">
-        <img src="fotos/chai-latte.jpg" alt="Chai latte con anís estrellado encima de la espuma" loading="lazy" decoding="async">
-        <div><h4>Dirty chai latte</h4><p>Concentrado de té chai + leche + shot de espresso</p></div><span class="price">$3.900</span></article>
-      <article class="menu-item"><div><h4>Irlandés</h4><p>Espresso doble + shot de baileys + leche</p></div><span class="price">$4.200</span></article>
+    <div class="local-carta" data-local="cafekupa">
+      <p class="local-cab"><b>Café Küpa</b> · Gamero 440, local 1 · <span>91 productos</span></p>
+      <p class="local-nota">El del centro. Es el que tiene los cinco filtrados Bourbon y el café en bolsa para llevar.</p>
+      <section class="carta-bloque reveal">
+        <header class="carta-bloque-head"><h3>Preparaciones con café</h3><span class="carta-bloque-n">14</span></header>
+        <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Espresso</h4><p>30 a 40 ml</p></div><span class="price">$2.590</span></article>
+        <article class="menu-item"><div><h4>Lungo</h4><p>Espresso doble + 60 ml de agua</p></div><span class="price">$2.700</span></article>
+        <article class="menu-item"><div><h4>Americano</h4><p>Espresso doble + 200 ml de agua</p></div><span class="price">$2.990</span></article>
+        <article class="menu-item"><div><h4>Macchiato</h4><p>Espresso doble + 30 ml de leche</p></div><span class="price">$2.990</span></article>
+        <article class="menu-item"><div><h4>Cappuccino mediano</h4><p>Espresso simple + 200 ml de leche</p></div><span class="price">$2.990</span></article>
+        <article class="menu-item"><div><h4>Cappuccino grande</h4><p>Espresso doble + 300 ml de leche</p></div><span class="price">$3.990</span></article>
+        <article class="menu-item"><div><h4>Flat white</h4><p>Espresso doble + 120 ml de leche</p></div><span class="price">$3.290</span></article>
+        <article class="menu-item"><div><h4>Cortado</h4><p>Espresso doble + 120 ml de leche</p></div><span class="price">$3.290</span></article>
+        <article class="menu-item"><div><h4>Cortado sin lactosa</h4><p>Espresso doble + 120 ml de leche</p></div><span class="price">$3.290</span></article>
+        <article class="menu-item"><div><h4>Latte</h4><p>Espresso simple + 300 ml de leche</p></div><span class="price">$3.590</span></article>
+        <article class="menu-item"><div><h4>Latte sabor</h4><p>Espresso simple + syrup + 270 ml de leche</p></div><span class="price">$4.390</span></article>
+        <article class="menu-item"><div><h4>Mocaccino</h4><p>Espresso doble + chocolate + leche</p></div><span class="price">$4.190</span></article>
+        <article class="menu-item"><div><h4>Dirty chai latte</h4><p>Té chai + leche + shot de espresso</p></div><span class="price">$4.190</span></article>
+        <article class="menu-item"><div><h4>Irlandés</h4><p>Espresso doble + shot de Baileys + leche</p></div><span class="price">$4.990</span></article>
+        </div>
+      </section>
+      <section class="carta-bloque reveal">
+        <header class="carta-bloque-head"><h3>Filtrados</h3><span class="carta-bloque-n">5</span></header>
+        <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Filtrado Bourbon Sidra</h4></div><span class="price">$5.990</span></article>
+        <article class="menu-item"><div><h4>Filtrado Bourbon Naranja</h4></div><span class="price">$5.990</span></article>
+        <article class="menu-item"><div><h4>Filtrado Bourbon</h4><p>Fresa, cerezas, moras, mermelada de frutos rojos</p></div><span class="price">$6.990</span></article>
+        <article class="menu-item"><div><h4>Filtrado Bourbon Ají</h4><p>Mango, frutos amarillos, panela, cacao, clavo de olor</p></div><span class="price">$6.990</span></article>
+        <article class="menu-item"><div><h4>Filtrado Bourbon Papayo</h4><p>Guinda, frutos rojos, pasas, clavo de olor, especias</p></div><span class="price">$6.990</span></article>
+        </div>
+      </section>
+      <section class="carta-bloque reveal">
+        <header class="carta-bloque-head"><h3>Preparaciones sin café</h3><span class="carta-bloque-n">6</span></header>
+        <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Chai latte</h4><p>Té chai + leche</p></div><span class="price">$3.590</span></article>
+        <article class="menu-item"><div><h4>Tetera de té artesanal</h4><p>Ceylán, chai, magia azul, menta manzanilla o relax</p></div><span class="price">$3.500</span></article>
+        <article class="menu-item"><div><h4>Chocolate caliente</h4><p>Chocolate + leche</p></div><span class="price">$4.200</span></article>
+        <article class="menu-item"><div><h4>Madrileño</h4><p>Chocolate caliente espeso</p></div><span class="price">$4.200</span></article>
+        <article class="menu-item"><div><h4>Matcha latte</h4><p>Té matcha + leche</p></div><span class="price">$4.500</span></article>
+        <article class="menu-item"><div><h4>Tetera de té con leche</h4><p>Ceylán tradicional o chai</p></div><span class="price">$4.500</span></article>
+        </div>
+      </section>
+      <section class="carta-bloque reveal">
+        <header class="carta-bloque-head"><h3>Frías con café</h3><span class="carta-bloque-n">11</span></header>
+        <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Iced latte</h4><p>Espresso + leche + hielo frappe</p></div><span class="price">$3.990</span></article>
+        <article class="menu-item"><div><h4>Cold brew</h4><p>Maceración en frío, sin saborizantes</p></div><span class="price">$4.500</span></article>
+        <article class="menu-item"><div><h4>Cold brew tonic</h4><p>Maceración en frío + agua tónica</p></div><span class="price">$4.500</span></article>
+        <article class="menu-item"><div><h4>Affogato</h4><p>Espresso doble + helado artesanal de vainilla</p></div><span class="price">$4.590</span></article>
+        <article class="menu-item"><div><h4>Dirty chai latte frío</h4></div><span class="price">$4.600</span></article>
+        <article class="menu-item"><div><h4>Iced latte sabor</h4><p>Espresso + leche + hielo + syrup</p></div><span class="price">$4.790</span></article>
+        <article class="menu-item"><div><h4>Espresso tonic</h4><p>Espresso doble + agua tónica y hielo</p></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Espresso naranja</h4><p>Espresso doble + jugo de naranja natural</p></div><span class="price">$5.500</span></article>
+        <article class="menu-item"><div><h4>Baileys affogato</h4><p>Espresso doble + Baileys + helado de vainilla</p></div><span class="price">$5.990</span></article>
+        <article class="menu-item"><div><h4>Café helado</h4><p>Espresso doble + leche + helado + crema chantilly</p></div><span class="price">$5.990</span></article>
+        <article class="menu-item"><div><h4>Limonada Küpa</h4><p>Limonada natural con un mágico shot de espresso</p></div><span class="price">$5.990</span></article>
+        </div>
+      </section>
+      <section class="carta-bloque reveal">
+        <header class="carta-bloque-head"><h3>Frías sin café</h3><span class="carta-bloque-n">12</span></header>
+        <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Agua mineral con o sin gas</h4><p>330 ml</p></div><span class="price">$2.490</span></article>
+        <article class="menu-item"><div><h4>Bebida</h4><p>Variedad 350 cc</p></div><span class="price">$2.490</span></article>
+        <article class="menu-item"><div><h4>Coca-Cola light</h4></div><span class="price">$2.490</span></article>
+        <article class="menu-item"><div><h4>Jugo prensado en frío</h4><p>Consultar variedad</p></div><span class="price">$3.200</span></article>
+        <article class="menu-item"><div><h4>Iced tea limón</h4></div><span class="price">$3.590</span></article>
+        <article class="menu-item"><div><h4>Iced tea frutos rojos</h4></div><span class="price">$3.590</span></article>
+        <article class="menu-item"><div><h4>Jugo de naranja</h4><p>100% natural</p></div><span class="price">$3.990</span></article>
+        <article class="menu-item"><div><h4>Chai latte frío</h4><p>Té chai + leche + hielo</p></div><span class="price">$4.200</span></article>
+        <article class="menu-item"><div><h4>Jugo 100% natural</h4><p>Piña, mix de berries, frambuesa o mango</p></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Limonada</h4><p>Limón, menta y jengibre</p></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Matcha latte frío</h4><p>Té matcha + leche + hielo</p></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Chocolate frío</h4><p>Chocolate + leche + hielo frappe + crema</p></div><span class="price">$4.990</span></article>
+        </div>
+      </section>
+      <section class="carta-bloque reveal">
+        <header class="carta-bloque-head"><h3>Pastelería</h3><span class="carta-bloque-n">21</span></header>
+        <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Media luna tradicional</h4></div><span class="price">$1.390</span></article>
+        <article class="menu-item"><div><h4>Media luna rellena de manjar</h4></div><span class="price">$1.790</span></article>
+        <article class="menu-item"><div><h4>Cono relleno</h4></div><span class="price">$1.990</span></article>
+        <article class="menu-item"><div><h4>Brownie de manjar</h4></div><span class="price">$2.990</span></article>
+        <article class="menu-item"><div><h4>Barra de manjar y nuez</h4></div><span class="price">$2.990</span></article>
+        <article class="menu-item"><div><h4>Galleta New York Red Velvet</h4></div><span class="price">$2.990</span></article>
+        <article class="menu-item"><div><h4>Galleta New York vainilla Nutella</h4></div><span class="price">$2.990</span></article>
+        <article class="menu-item"><div><h4>Galleta New York carrot</h4></div><span class="price">$2.990</span></article>
+        <article class="menu-item"><div><h4>Rollo de canela</h4></div><span class="price">$3.500</span></article>
+        <article class="menu-item"><div><h4>Cheesecake frambuesa</h4></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Cheesecake maracuyá</h4></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Cheesecake Oreo</h4></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Cheesecake chocolate</h4></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Pie de limón</h4><p>Limón y frambuesa</p></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Pie de maracuyá</h4></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Torta helada de Oreo</h4></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Torta panqueque de chocolate</h4></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Torta carrot cake</h4></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Torta tres leches de frambuesa</h4></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Cheesecake pistacho</h4></div><span class="price">$5.490</span></article>
+        <article class="menu-item"><div><h4>Bolsa de alfajores</h4></div><span class="price">$5.990</span></article>
+        </div>
+      </section>
+      <section class="carta-bloque reveal">
+        <header class="carta-bloque-head"><h3>Pastelería saludable</h3><span class="carta-bloque-n">8</span></header>
+        <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Snack saludable x2</h4></div><span class="price">$2.190</span></article>
+        <article class="menu-item"><div><h4>Galleta de almendra sin gluten</h4></div><span class="price">$2.990</span></article>
+        <article class="menu-item"><div><h4>Brownie sin azúcar</h4></div><span class="price">$3.990</span></article>
+        <article class="menu-item"><div><h4>Pie de nuez vegano</h4></div><span class="price">$3.990</span></article>
+        <article class="menu-item"><div><h4>Pie de maracuyá vegano</h4></div><span class="price">$3.990</span></article>
+        <article class="menu-item"><div><h4>Pie de berries vegano</h4></div><span class="price">$3.990</span></article>
+        <article class="menu-item"><div><h4>Pie de manjar vegano</h4></div><span class="price">$3.990</span></article>
+        <article class="menu-item"><div><h4>Cheesecake keto</h4><p>Con alulosa y harina de almendras</p></div><span class="price">$5.990</span></article>
+        </div>
+      </section>
+      <section class="carta-bloque reveal">
+        <header class="carta-bloque-head"><h3>Sándwiches y tostadas</h3><span class="carta-bloque-n">13</span></header>
+        <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Aliado jamón queso</h4><p>Pan de miga, blanco o integral</p></div><span class="price">$3.500</span></article>
+        <article class="menu-item"><div><h4>Rústico aceituna</h4><p>Queso ranco, tomate y aceitunas sevillanas</p></div><span class="price">$3.990</span></article>
+        <article class="menu-item"><div><h4>Rústico rúcula</h4><p>Jamón pierna, queso ranco, tomate y rúcula</p></div><span class="price">$4.690</span></article>
+        <article class="menu-item"><div><h4>Croissant jamón queso</h4><p>Croissant artesanal, jamón pierna y queso ranco</p></div><span class="price">$5.500</span></article>
+        <article class="menu-item"><div><h4>Proteína artesanal</h4><p>Pan pita, pasta de pollo con pimientos asados y mayonesa</p></div><span class="price">$5.990</span></article>
+        <article class="menu-item"><div><h4>Vital mediterráneo</h4><p>Pan pita, jamón, queso, espinaca, tomate, aceituna, pepinillo y pesto</p></div><span class="price">$5.990</span></article>
+        <article class="menu-item"><div><h4>Croissant jamón serrano</h4><p>Con queso ranco y rúcula</p></div><span class="price">$6.990</span></article>
+        <article class="menu-item"><div><h4>Tostadas palta</h4><p>Masa madre, tomate cherry y multisemillas</p></div><span class="price">$6.990</span></article>
+        <article class="menu-item"><div><h4>Tostada huevo</h4><p>Masa madre, huevo revuelto, tomate cherry y semillas</p></div><span class="price">$6.990</span></article>
+        <article class="menu-item"><div><h4>Tostadas palta y jamón serrano</h4><p>Masa madre, tomate cherry y semillas</p></div><span class="price">$8.990</span></article>
+        <article class="menu-item"><div><h4>Tostadas huevo y jamón serrano</h4><p>Masa madre, tomate cherry y semillas</p></div><span class="price">$8.990</span></article>
+        <article class="menu-item"><div><h4>Croissant pollo palta</h4><p>Pechuga desmenuzada, mayonesa y palta laminada</p></div><span class="price">$8.990</span></article>
+        <article class="menu-item"><div><h4>Toscano pollo palta</h4><p>Pan toscano, pechuga desmenuzada, palta y mayonesa</p></div><span class="price">$8.990</span></article>
+        </div>
+      </section>
+      <section class="carta-bloque reveal">
+        <header class="carta-bloque-head"><h3>Café para llevar</h3><span class="carta-bloque-n">1</span></header>
+        <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Bolivia Küpa 250 g</h4></div><span class="price">$14.500</span></article>
+        </div>
+      </section>
     </div>
-    </section>
-    <section class="carta-bloque reveal">
-      <header class="carta-bloque-head">
-        <h3>Filtrados</h3>
-        <span class="carta-bloque-n">1 opción</span>
-      </header>
-
-    <div class="menu reveal stagger">
-      <article class="menu-item">
-        <div><h4>Filtrados por origen</h4><p>Consultar por orígenes disponibles. El valor varía según origen, proceso y variedad.</p></div>
-        <span class="price">$4.500 – $5.990</span>
-      </article>
+    <div class="local-carta" data-local="kupa" hidden>
+      <p class="local-cab"><b>Küpa</b> · Bombero Villalobos 01231, local 2 · <span>92 productos</span></p>
+      <p class="local-nota">La carta más grande de los tres: es el único con ensaladas, omelettes y tostadas de queso de cabra.</p>
+      <section class="carta-bloque reveal">
+        <header class="carta-bloque-head"><h3>Preparaciones con café</h3><span class="carta-bloque-n">13</span></header>
+        <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Espresso</h4><p>Espresso doble, 30 a 40 ml</p></div><span class="price">$2.590</span></article>
+        <article class="menu-item"><div><h4>Lungo</h4><p>Espresso doble + 60 ml de agua</p></div><span class="price">$2.700</span></article>
+        <article class="menu-item"><div><h4>Americano</h4><p>Espresso doble + 200 ml de agua</p></div><span class="price">$2.990</span></article>
+        <article class="menu-item"><div><h4>Macchiato</h4><p>Espresso doble + mancha de leche</p></div><span class="price">$2.990</span></article>
+        <article class="menu-item"><div><h4>Cappuccino mediano</h4><p>Espresso simple + 200 ml de leche</p></div><span class="price">$2.990</span></article>
+        <article class="menu-item"><div><h4>Cortado</h4><p>Espresso doble + 120 ml de leche</p></div><span class="price">$3.290</span></article>
+        <article class="menu-item"><div><h4>Flat white</h4><p>Espresso doble + 100 ml de leche</p></div><span class="price">$3.290</span></article>
+        <article class="menu-item"><div><h4>Latte</h4><p>Espresso simple + 300 ml de leche</p></div><span class="price">$3.590</span></article>
+        <article class="menu-item"><div><h4>Cappuccino grande</h4><p>Espresso doble + 300 ml de leche</p></div><span class="price">$3.990</span></article>
+        <article class="menu-item"><div><h4>Dirty chai latte</h4><p>Espresso + concentrado de chai + leche</p></div><span class="price">$4.190</span></article>
+        <article class="menu-item"><div><h4>Mocaccino</h4><p>Espresso doble + chocolate + leche</p></div><span class="price">$4.190</span></article>
+        <article class="menu-item"><div><h4>Latte sabor</h4><p>Espresso simple + 300 ml de leche + syrup</p></div><span class="price">$4.390</span></article>
+        <article class="menu-item"><div><h4>Irlandés</h4><p>Espresso doble + crema de whisky + leche</p></div><span class="price">$4.990</span></article>
+        </div>
+      </section>
+      <section class="carta-bloque reveal">
+        <header class="carta-bloque-head"><h3>Filtrados</h3><span class="carta-bloque-n">3</span></header>
+        <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Colombia Natural</h4><p>Uvas rojas, higos maduros, chocolate. Acidez cítrica, cuerpo alto cremoso</p></div><span class="price">$5.990</span></article>
+        <article class="menu-item"><div><h4>Colombia Honey Bourbon Naranja</h4></div><span class="price">$5.990</span></article>
+        <article class="menu-item"><div><h4>Colombia Natural Thermal Shock</h4><p>Proceso Thermal Shock</p></div><span class="price">$7.990</span></article>
+        </div>
+      </section>
+      <section class="carta-bloque reveal">
+        <header class="carta-bloque-head"><h3>Preparaciones sin café</h3><span class="carta-bloque-n">6</span></header>
+        <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Tetera de té artesanal</h4><p>Consultar variedad disponible</p></div><span class="price">$3.500</span></article>
+        <article class="menu-item"><div><h4>Chai latte</h4><p>Té chai + 300 ml de leche</p></div><span class="price">$3.590</span></article>
+        <article class="menu-item"><div><h4>Chocolate caliente</h4><p>Chocolate italiano + 300 ml de leche</p></div><span class="price">$4.200</span></article>
+        <article class="menu-item"><div><h4>Madrileño</h4><p>Chocolate italiano + 160 ml de leche, espeso</p></div><span class="price">$4.200</span></article>
+        <article class="menu-item"><div><h4>Tetera con leche</h4><p>Ceylán tradicional o chai</p></div><span class="price">$4.500</span></article>
+        <article class="menu-item"><div><h4>Matcha latte</h4><p>Té matcha + 300 ml de leche</p></div><span class="price">$4.500</span></article>
+        </div>
+      </section>
+      <section class="carta-bloque reveal">
+        <header class="carta-bloque-head"><h3>Frías con café</h3><span class="carta-bloque-n">10</span></header>
+        <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Iced latte</h4><p>Espresso + hielo frappe + leche</p></div><span class="price">$3.990</span></article>
+        <article class="menu-item"><div><h4>Cold brew</h4><p>Maceración en frío, sin saborizantes, alto en cafeína</p></div><span class="price">$4.500</span></article>
+        <article class="menu-item"><div><h4>Cold brew tonic</h4><p>Maceración en frío + agua tónica</p></div><span class="price">$4.500</span></article>
+        <article class="menu-item"><div><h4>Affogato</h4><p>Espresso doble + helado artesanal de la región</p></div><span class="price">$4.590</span></article>
+        <article class="menu-item"><div><h4>Iced latte sabor</h4><p>Espresso + leche + hielo frappe + syrup</p></div><span class="price">$4.790</span></article>
+        <article class="menu-item"><div><h4>Espresso tonic</h4><p>Espresso doble + hielo + agua tónica</p></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Espresso naranja</h4><p>Doble espresso + hielo + jugo de naranja</p></div><span class="price">$5.500</span></article>
+        <article class="menu-item"><div><h4>Baileys affogato</h4><p>Espresso doble + crema de whisky + helado de la región</p></div><span class="price">$5.990</span></article>
+        <article class="menu-item"><div><h4>Café helado</h4><p>Helado de vainilla artesanal, doble espresso, leche y crema. Sin azúcar añadida</p></div><span class="price">$5.990</span></article>
+        <article class="menu-item"><div><h4>Limonada Küpa</h4><p>Limonada natural con un mágico shot de espresso</p></div><span class="price">$5.990</span></article>
+        </div>
+      </section>
+      <section class="carta-bloque reveal">
+        <header class="carta-bloque-head"><h3>Frías sin café</h3><span class="carta-bloque-n">11</span></header>
+        <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Agua mineral con o sin gas</h4></div><span class="price">$2.490</span></article>
+        <article class="menu-item"><div><h4>Bebida</h4><p>Consultar variedad</p></div><span class="price">$2.490</span></article>
+        <article class="menu-item"><div><h4>Jugo prensado en frío</h4></div><span class="price">$3.200</span></article>
+        <article class="menu-item"><div><h4>Iced tea limón</h4></div><span class="price">$3.590</span></article>
+        <article class="menu-item"><div><h4>Iced tea frutos rojos</h4></div><span class="price">$3.590</span></article>
+        <article class="menu-item"><div><h4>Jugo de naranja</h4><p>100% natural recién exprimido</p></div><span class="price">$3.990</span></article>
+        <article class="menu-item"><div><h4>Chai latte frío</h4><p>Té chai + leche + hielo</p></div><span class="price">$4.200</span></article>
+        <article class="menu-item"><div><h4>Matcha latte frío</h4><p>Té matcha + hielo y leche</p></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Chocolate frío</h4><p>Chocolate italiano + hielo + crema chantilly</p></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Limonada</h4><p>Limón, menta y jengibre</p></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Jugo 100% natural</h4><p>Consultar fruta disponible</p></div><span class="price">$4.990</span></article>
+        </div>
+      </section>
+      <section class="carta-bloque reveal">
+        <header class="carta-bloque-head"><h3>Pastelería</h3><span class="carta-bloque-n">23</span></header>
+        <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Media luna tradicional</h4></div><span class="price">$1.390</span></article>
+        <article class="menu-item"><div><h4>Media luna rellena de manjar o crema</h4></div><span class="price">$1.790</span></article>
+        <article class="menu-item"><div><h4>Canelé</h4><p>Pastel tradicional de Burdeos: exterior caramelizado, interior suave y cremoso</p></div><span class="price">$2.200</span></article>
+        <article class="menu-item"><div><h4>Brownie</h4></div><span class="price">$2.990</span></article>
+        <article class="menu-item"><div><h4>New York Red Velvet</h4></div><span class="price">$2.990</span></article>
+        <article class="menu-item"><div><h4>Rollo de canela con frosting</h4></div><span class="price">$2.990</span></article>
+        <article class="menu-item"><div><h4>Bolsa de cuchuflí x4</h4><p>Relleno de chocolate y manjar</p></div><span class="price">$3.990</span></article>
+        <article class="menu-item"><div><h4>Cheesecake frutos rojos</h4></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Cheesecake maracuyá</h4></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Cheesecake Oreo</h4></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Cheesecake chocolate intenso</h4></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Kuchen de manzana</h4></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Pie de limón</h4></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Torta de Oreo helada</h4></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Torta panqueque chocolate, manjar y frambuesa</h4></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Torta carrot cake</h4></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Torta tres leches de frambuesa</h4></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Cheesecake pistacho</h4></div><span class="price">$5.490</span></article>
+        <article class="menu-item"><div><h4>Cheesecake vasco</h4><p>Horneada sin base de galleta: exterior rústico dorado y corazón untuoso</p></div><span class="price">$5.500</span></article>
+        <article class="menu-item"><div><h4>Croissant relleno Nutella y frutilla</h4><p>Crema de avellanas y frutillas frescas</p></div><span class="price">$5.990</span></article>
+        <article class="menu-item"><div><h4>Croissant pistacho</h4><p>Relleno con suave crema de pistacho</p></div><span class="price">$5.990</span></article>
+        <article class="menu-item"><div><h4>Bolsa de alfajores x6</h4><p>La marplatense</p></div><span class="price">$5.990</span></article>
+        <article class="menu-item"><div><h4>Tostadas francesa</h4><p>Pan brioche rebosado, mermelada de frutilla casera y frutas de la estación</p></div><span class="price">$6.990</span></article>
+        </div>
+      </section>
+      <section class="carta-bloque reveal">
+        <header class="carta-bloque-head"><h3>Pastelería saludable</h3><span class="carta-bloque-n">6</span></header>
+        <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Snack saludable Catatuille x2</h4><p>Libre de azúcar y harinas</p></div><span class="price">$2.190</span></article>
+        <article class="menu-item"><div><h4>Pie de maracuyá</h4><p>Sin gluten y sin azúcar</p></div><span class="price">$3.990</span></article>
+        <article class="menu-item"><div><h4>Pie de berries</h4><p>Sin gluten, sin azúcar y vegano</p></div><span class="price">$3.990</span></article>
+        <article class="menu-item"><div><h4>Pie de manjar y chocolate</h4><p>Sin gluten, sin azúcar y vegano</p></div><span class="price">$3.990</span></article>
+        <article class="menu-item"><div><h4>Brownie sin azúcar</h4><p>Alulosa, harina de almendras y avena</p></div><span class="price">$3.990</span></article>
+        <article class="menu-item"><div><h4>Cheesecake keto</h4><p>Con alulosa y harina de almendras</p></div><span class="price">$5.990</span></article>
+        </div>
+      </section>
+      <section class="carta-bloque reveal">
+        <header class="carta-bloque-head"><h3>Tostadas y sándwiches</h3><span class="carta-bloque-n">18</span></header>
+        <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Aliado blanco</h4><p>Pan de miga, jamón pierna y queso ranco</p></div><span class="price">$3.500</span></article>
+        <article class="menu-item"><div><h4>Rústico aceituna</h4><p>Pan toscano, queso ranco, tomate y aceitunas sevillanas</p></div><span class="price">$3.990</span></article>
+        <article class="menu-item"><div><h4>Rústico rúcula</h4><p>Pan toscano, jamón pierna, queso ranco, tomate y rúcula</p></div><span class="price">$4.690</span></article>
+        <article class="menu-item"><div><h4>Croissant jamón queso</h4><p>Croissant artesanal, jamón pierna y queso ranco</p></div><span class="price">$5.500</span></article>
+        <article class="menu-item"><div><h4>Croissant jamón serrano</h4><p>Con queso ranco y rúcula</p></div><span class="price">$6.990</span></article>
+        <article class="menu-item"><div><h4>Tostadas palta</h4><p>Masa madre, tomate cherry y multisemillas</p></div><span class="price">$6.990</span></article>
+        <article class="menu-item"><div><h4>Tostadas huevo</h4><p>Masa madre, tomate cherry y multisemillas</p></div><span class="price">$6.990</span></article>
+        <article class="menu-item"><div><h4>Tostada huevo pochado</h4><p>Masa madre, palta y 2 huevos pochados</p></div><span class="price">$6.990</span></article>
+        <article class="menu-item"><div><h4>Tostada jamón serrano</h4><p>Tomates cherry asados con tomillo y miel</p></div><span class="price">$6.990</span></article>
+        <article class="menu-item"><div><h4>Omelette jamón queso</h4><p>Con tomate cherry, ciboulette y semillas</p></div><span class="price">$6.990</span></article>
+        <article class="menu-item"><div><h4>Omelette champiñón queso</h4><p>Con tomate cherry, ciboulette y semillas</p></div><span class="price">$6.990</span></article>
+        <article class="menu-item"><div><h4>Omelette huevo palta</h4><p>Con media palta y tomates cherry</p></div><span class="price">$6.990</span></article>
+        <article class="menu-item"><div><h4>Tostada serrano y albahaca</h4><p>Queso Philadelphia, pesto, tomates asados, serrano y brotes</p></div><span class="price">$7.990</span></article>
+        <article class="menu-item"><div><h4>Tostadas queso de cabra salada</h4><p>Tomates cherry asados al tomillo y miel, queso de cabra gratinado (2 u)</p></div><span class="price">$7.990</span></article>
+        <article class="menu-item"><div><h4>Tostadas queso de cabra dulce</h4><p>Pan brioche, mermelada de frutilla casera y queso de cabra gratinado (2 u)</p></div><span class="price">$7.990</span></article>
+        <article class="menu-item"><div><h4>Toscano pollo palta</h4><p>Pechuga desmenuzada, mayonesa y palta laminada</p></div><span class="price">$8.990</span></article>
+        <article class="menu-item"><div><h4>Croissant pollo palta</h4><p>Pechuga desmenuzada, mayonesa y palta laminada</p></div><span class="price">$8.990</span></article>
+        <article class="menu-item"><div><h4>Sándwich desmechado</h4><p>Toscano artesanal, carne desmechada, queso ranco, champiñones y palta</p></div><span class="price">$10.990</span></article>
+        </div>
+      </section>
+      <section class="carta-bloque reveal">
+        <header class="carta-bloque-head"><h3>Ensaladas</h3><span class="carta-bloque-n">2</span></header>
+        <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Ensalada chicken protein</h4><p>Hojas verdes, pollo, huevo pochado, palta, quinoa o cuscús, cherry y vinagreta</p></div><span class="price">$8.990</span></article>
+        <article class="menu-item"><div><h4>Ensalada vegana</h4><p>Hojas verdes, porotos negros, champiñones, quinoa o cuscús, palta, cherry y vinagreta</p></div><span class="price">$8.990</span></article>
+        </div>
+      </section>
     </div>
-    </section>
-    <section class="carta-bloque reveal">
-      <header class="carta-bloque-head">
-        <h3>Preparaciones sin café</h3>
-        <span class="carta-bloque-n">7 opciones</span>
-      </header>
-
-    <div class="menu reveal stagger">
-      <article class="menu-item"><div><h4>Chai latte</h4><p>Concentrado de té chai + leche</p></div><span class="price">$3.200</span></article>
-      <article class="menu-item">
-        <img src="fotos/chocolate-trufas.jpg" alt="Chocolate caliente con trufas de chocolate" loading="lazy" decoding="async">
-        <div><h4>Chocolate caliente</h4><p>Chocolate caliente + leche</p></div><span class="price">$3.990</span></article>
-      <article class="menu-item"><div><h4>Madrileño</h4><p>Chocolate caliente espeso</p></div><span class="price">$3.990</span></article>
-      <article class="menu-item"><div><h4>Matcha latte</h4><p>Concentrado de té matcha + leche</p></div><span class="price">$3.990</span></article>
-      <article class="menu-item"><div><h4>Tetera de té 100% artesanal</h4><p>Ceylán tradicional · Chai · Magia azul · Menta manzanilla · Relax</p></div><span class="price">$2.990</span></article>
-      <article class="menu-item"><div><h4>Tetera de té con leche</h4><p>Ceylán tradicional · Chai</p></div><span class="price">$3.990</span></article>
-      <article class="menu-item"><div><h4>Agregados</h4><p>Syrup de sabor / Espresso / Cambio a bebida vegetal / Hielo</p></div><span class="price">$700</span></article>
+    <div class="local-carta" data-local="mujica" hidden>
+      <p class="local-cab"><b>Küpa Mujica</b> · Mujica 301 · <span>63 productos</span></p>
+      <p class="local-nota">El único donde casi todas las preparaciones tienen versión sin lactosa.</p>
+      <section class="carta-bloque reveal">
+        <header class="carta-bloque-head"><h3>Preparaciones con café</h3><span class="carta-bloque-n">13</span></header>
+        <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Espresso</h4><p>30 a 40 ml</p></div><span class="price">$2.590</span></article>
+        <article class="menu-item"><div><h4>Lungo</h4><p>Espresso doble + 80 ml de agua</p></div><span class="price">$2.700</span></article>
+        <article class="menu-item"><div><h4>Americano</h4><p>Espresso doble + 200 ml de agua</p></div><span class="price">$2.990</span></article>
+        <article class="menu-item"><div><h4>Macchiato</h4><p>Espresso doble + 80 ml de leche</p></div><span class="price">$2.990</span></article>
+        <article class="menu-item"><div><h4>Cappuccino mediano</h4><p>Espresso simple + leche</p></div><span class="price">$2.990</span></article>
+        <article class="menu-item"><div><h4>Flat white</h4><p>Espresso doble + 120 ml de leche</p></div><span class="price">$3.290</span></article>
+        <article class="menu-item"><div><h4>Cortado</h4><p>Espresso doble + 150 ml de leche</p></div><span class="price">$3.290</span></article>
+        <article class="menu-item"><div><h4>Latte</h4><p>Espresso simple + leche, suave</p></div><span class="price">$3.590</span></article>
+        <article class="menu-item"><div><h4>Cappuccino grande</h4><p>Espresso doble + leche</p></div><span class="price">$3.990</span></article>
+        <article class="menu-item"><div><h4>Mocaccino</h4><p>Espresso doble + chocolate + leche</p></div><span class="price">$4.190</span></article>
+        <article class="menu-item"><div><h4>Dirty chai latte</h4><p>Espresso simple + mezcla de chai + leche</p></div><span class="price">$4.190</span></article>
+        <article class="menu-item"><div><h4>Latte sabor</h4><p>Espresso simple + leche + syrup</p></div><span class="price">$4.390</span></article>
+        <article class="menu-item"><div><h4>Irlandés</h4><p>Espresso doble + shot de Baileys + leche</p></div><span class="price">$4.990</span></article>
+        </div>
+      </section>
+      <section class="carta-bloque reveal">
+        <header class="carta-bloque-head"><h3>Filtrados</h3><span class="carta-bloque-n">3</span></header>
+        <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Filtrado Bourbon Naranja</h4></div><span class="price">$5.990</span></article>
+        <article class="menu-item"><div><h4>Filtrado Colombia Natural 48</h4></div><span class="price">$5.990</span></article>
+        <article class="menu-item"><div><h4>Filtrado Thermal Shock</h4><p>Proceso Thermal Shock</p></div><span class="price">$7.990</span></article>
+        </div>
+      </section>
+      <section class="carta-bloque reveal">
+        <header class="carta-bloque-head"><h3>Preparaciones sin café</h3><span class="carta-bloque-n">6</span></header>
+        <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Tetera de té artesanal</h4><p>Ceylán, chai, magia azul o manzanilla menta</p></div><span class="price">$3.500</span></article>
+        <article class="menu-item"><div><h4>Chai latte</h4><p>Té chai + leche</p></div><span class="price">$3.590</span></article>
+        <article class="menu-item"><div><h4>Chocolate caliente</h4><p>Chocolate italiano + leche</p></div><span class="price">$4.200</span></article>
+        <article class="menu-item"><div><h4>Madrileño</h4><p>Chocolate italiano espeso</p></div><span class="price">$4.200</span></article>
+        <article class="menu-item"><div><h4>Matcha latte</h4><p>Té matcha ligeramente endulzado + leche</p></div><span class="price">$4.500</span></article>
+        <article class="menu-item"><div><h4>Tetera de té con leche</h4><p>Ceylán o chai + 350 ml de leche</p></div><span class="price">$4.500</span></article>
+        </div>
+      </section>
+      <section class="carta-bloque reveal">
+        <header class="carta-bloque-head"><h3>Frías con café</h3><span class="carta-bloque-n">7</span></header>
+        <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Iced latte</h4><p>Café + hielo + leche</p></div><span class="price">$3.990</span></article>
+        <article class="menu-item"><div><h4>Affogato</h4><p>Espresso + 100 g de helado de vainilla artesanal</p></div><span class="price">$4.590</span></article>
+        <article class="menu-item"><div><h4>Iced latte sabor</h4><p>Espresso + hielo + leche + syrup</p></div><span class="price">$4.790</span></article>
+        <article class="menu-item"><div><h4>Espresso tonic</h4><p>Espresso doble + hielo + agua tónica</p></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Espresso naranja</h4><p>Espresso doble + jugo de naranja 100% natural</p></div><span class="price">$5.500</span></article>
+        <article class="menu-item"><div><h4>Baileys affogato</h4><p>Espresso + crema de Baileys + 100 g de helado de vainilla</p></div><span class="price">$5.990</span></article>
+        <article class="menu-item"><div><h4>Café helado</h4><p>Espresso + helado de vainilla + leche + crema chantilly</p></div><span class="price">$5.990</span></article>
+        </div>
+      </section>
+      <section class="carta-bloque reveal">
+        <header class="carta-bloque-head"><h3>Frías sin café</h3><span class="carta-bloque-n">9</span></header>
+        <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Agua mineral con o sin gas</h4></div><span class="price">$2.490</span></article>
+        <article class="menu-item"><div><h4>Bebida</h4><p>Consultar variedad</p></div><span class="price">$2.490</span></article>
+        <article class="menu-item"><div><h4>Jugo prensado en frío</h4><p>Manzana, maqui manzana o cranberry manzana</p></div><span class="price">$3.200</span></article>
+        <article class="menu-item"><div><h4>Iced tea limón</h4></div><span class="price">$3.590</span></article>
+        <article class="menu-item"><div><h4>Iced tea frutos rojos</h4></div><span class="price">$3.590</span></article>
+        <article class="menu-item"><div><h4>Jugo de naranja</h4><p>100% natural</p></div><span class="price">$3.990</span></article>
+        <article class="menu-item"><div><h4>Chai latte frío</h4><p>Mezcla de té chai + hielo + leche</p></div><span class="price">$4.200</span></article>
+        <article class="menu-item"><div><h4>Matcha latte frío</h4><p>Té matcha ligeramente endulzado + hielo + leche</p></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Chocolate frío</h4><p>Chocolate italiano + hielo + leche + crema chantilly</p></div><span class="price">$4.990</span></article>
+        </div>
+      </section>
+      <section class="carta-bloque reveal">
+        <header class="carta-bloque-head"><h3>Pastelería</h3><span class="carta-bloque-n">18</span></header>
+        <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Media luna tradicional</h4></div><span class="price">$1.390</span></article>
+        <article class="menu-item"><div><h4>Media luna rellena de manjar</h4></div><span class="price">$1.790</span></article>
+        <article class="menu-item"><div><h4>Alfajor de maicena</h4></div><span class="price">$1.790</span></article>
+        <article class="menu-item"><div><h4>Canelé</h4><p>Pastel tradicional de Burdeos: exterior caramelizado, interior suave</p></div><span class="price">$2.200</span></article>
+        <article class="menu-item"><div><h4>Cono relleno de dulce de leche</h4></div><span class="price">$2.200</span></article>
+        <article class="menu-item"><div><h4>Galleta New York Red Velvet</h4><p>Con cheese cream</p></div><span class="price">$2.990</span></article>
+        <article class="menu-item"><div><h4>Galleta New York Nutella</h4><p>Vainilla y Nutella</p></div><span class="price">$2.990</span></article>
+        <article class="menu-item"><div><h4>Cuadrado de nuez</h4></div><span class="price">$2.990</span></article>
+        <article class="menu-item"><div><h4>Brownie de manjar</h4></div><span class="price">$2.990</span></article>
+        <article class="menu-item"><div><h4>Rollo de canela</h4></div><span class="price">$2.990</span></article>
+        <article class="menu-item"><div><h4>Bolsa de cuchuflí</h4></div><span class="price">$3.990</span></article>
+        <article class="menu-item"><div><h4>Pie de limón</h4></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Torta de Oreo</h4></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Cheesecake frambuesa</h4></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Cheesecake maracuyá</h4></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Cheesecake Oreo</h4></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Cheesecake chocolate</h4></div><span class="price">$4.990</span></article>
+        <article class="menu-item"><div><h4>Bolsa de alfajor de maicena x6</h4></div><span class="price">$5.990</span></article>
+        </div>
+      </section>
+      <section class="carta-bloque reveal">
+        <header class="carta-bloque-head"><h3>Pastelería sin azúcar</h3><span class="carta-bloque-n">3</span></header>
+        <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Snack saludable x2</h4></div><span class="price">$2.190</span></article>
+        <article class="menu-item"><div><h4>Brownie keto</h4></div><span class="price">$3.990</span></article>
+        <article class="menu-item"><div><h4>Cheesecake keto</h4><p>Libre de azúcar y harina</p></div><span class="price">$5.990</span></article>
+        </div>
+      </section>
+      <section class="carta-bloque reveal">
+        <header class="carta-bloque-head"><h3>Sándwiches</h3><span class="carta-bloque-n">4</span></header>
+        <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Aliado blanco o integral</h4><p>Pan de molde, queso ranco y jamón pierna</p></div><span class="price">$3.500</span></article>
+        <article class="menu-item"><div><h4>Rústico aceituna</h4><p>Pan toscano, queso ranco, tomate y aceitunas sevillanas</p></div><span class="price">$3.990</span></article>
+        <article class="menu-item"><div><h4>Rústico rúcula</h4><p>Pan toscano, jamón pierna, queso ranco, tomate y rúcula</p></div><span class="price">$4.690</span></article>
+        <article class="menu-item"><div><h4>Sándwich mechada y queso</h4><p>Pan toscano artesanal, carne desmechada y queso ranco</p></div><span class="price">$5.590</span></article>
+        </div>
+      </section>
     </div>
-    </section>
-    <section class="carta-bloque reveal">
-      <header class="carta-bloque-head">
-        <h3>Para comer</h3>
-        <span class="carta-bloque-n">6 opciones</span>
-      </header>
-
-    <div class="aviso reveal">
-      <strong>La carta que publicaron es sólo de bebidas.</strong> Estos
-      platos son reales —se ven en sus propias fotos y los nombran sus
-      reseñas— pero <b>sus precios no constan en ninguna parte</b>, así que
-      acá van sin valor en vez de con uno inventado.
-    </div>
-    <div class="menu reveal stagger">
-      <article class="menu-item">
-        <img src="fotos/palta-pochado.jpg" alt="Tostada de palta con huevo pochado" loading="lazy" decoding="async">
-        <div><h4>Tostada de palta con huevo pochado</h4><p>Con semillas y encurtido de betarraga.</p></div><span class="price">Consultar</span></article>
-      <article class="menu-item">
-        <img src="fotos/omelette.jpg" alt="Omelette con palta" loading="lazy" decoding="async">
-        <div><h4>Omelette</h4><p>Servido con palta y semillas.</p></div><span class="price">Consultar</span></article>
-      <article class="menu-item">
-        <img src="fotos/sandwich.jpg" alt="Sándwich en pan ciabatta" loading="lazy" decoding="async">
-        <div><h4>Sándwiches</h4><p>Nombrados por sus clientes en las reseñas.</p></div><span class="price">Consultar</span></article>
-      <article class="menu-item">
-        <img src="fotos/tortas.jpg" alt="Cheesecakes y tortas en vitrina" loading="lazy" decoding="async">
-        <div><h4>Pastelería</h4><p>Cheesecakes y tortas en vitrina.</p></div><span class="price">Consultar</span></article>
-      <article class="menu-item">
-        <img src="fotos/cafe-helado-brownie.jpg" alt="Brownie de chocolate" loading="lazy" decoding="async">
-        <div><h4>Brownie</h4><p>Visto en sus fotos, acompañando el café helado.</p></div><span class="price">Consultar</span></article>
-      <article class="menu-item"><div><h4>Alfajores</h4><p>Nombrados en la reseña de Jorge Reveco.</p></div><span class="price">Consultar</span></article>
-    </div>
-    </section>
-    <p class="note">
-      Precios transcritos de <em>fotos/carta.jpg</em>, foto de su carta
-      impresa subida por el local.
-    </p>
-    <!--
-      ⚠️ PLACEHOLDER MARCADO — FALTAN LOS PRECIOS DE LA COMIDA.
-      La carta fotografiada sólo cubre bebidas. Los 6 productos de "Para
-      comer" son reales (se ven en sus fotos y los nombran las reseñas) pero
-      NO tienen precio publicado en ninguna parte. Van como "Consultar".
-      Cuando el local entregue su carta de comida, reemplazar.
-    -->
   </div>
+
 </section>
 
 <!-- ══════════════ RESEÑAS ══════════════ -->

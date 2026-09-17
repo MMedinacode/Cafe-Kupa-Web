@@ -156,3 +156,39 @@
   var hash = (location.hash || '').replace('#', '');
   if (hash && document.querySelector('[data-tab-panel="' + hash + '"]')) goToTab(hash);
 })();
+
+
+/* ─── Selector de local de la carta ───────────────────────────────────
+   Tres cartas en la misma página: se muestra una y se ocultan las otras.
+   Se usa el atributo `hidden` y no display:none en línea porque el resto
+   del sitio ya lo hace así y respeta las animaciones de reveal. */
+(function () {
+  var botones = document.querySelectorAll('.local-btn');
+  if (!botones.length) return;
+  var cartas = document.querySelectorAll('.local-carta');
+
+  function mostrar(cual) {
+    for (var i = 0; i < cartas.length; i++) {
+      cartas[i].hidden = cartas[i].getAttribute('data-local') !== cual;
+    }
+    for (var k = 0; k < botones.length; k++) {
+      var on = botones[k].getAttribute('data-ir') === cual;
+      botones[k].classList.toggle('on', on);
+      botones[k].setAttribute('aria-selected', on ? 'true' : 'false');
+    }
+    /* Los bloques que estaban ocultos nunca dispararon su reveal: se
+       fuerzan visibles, si no la carta aparece en blanco. */
+    var vis = document.querySelector('.local-carta:not([hidden])');
+    if (vis) {
+      var r = vis.querySelectorAll('.reveal');
+      for (var m = 0; m < r.length; m++) r[m].classList.add('in', 'visible', 'seen');
+    }
+  }
+
+  for (var i = 0; i < botones.length; i++) {
+    botones[i].addEventListener('click', function () {
+      mostrar(this.getAttribute('data-ir'));
+    });
+  }
+  mostrar('cafekupa');
+})();
